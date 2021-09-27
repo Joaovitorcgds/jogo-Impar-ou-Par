@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <title>Imersão Dev - Aula 06</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Tabela de classificação</h1>
+  <h2 style="color: white;">Jogo Impar ou Par</h2>
+  <form style= "margin-bottom: 20px">
+    <label for="numeroDigitado">Insira um número</label>
+    <input type="number" min= 0 name="numeroDigitado" class="numeroDigitado" placeholder="coloque um número">
+    <select id="imparOuPar">
+      <option value="impar">Impar</option>
+      <option value="par">Par</option>
+    </select>
+    <input type="button" value="jogar" onclick="jogar()">
+    <input type="button" value="zerar" onclick="zerarJogo()">
+  </form>
+
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Derrotas</th>
+        <th>Pontos</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaJogadores">
+    </tbody>
+  </table>
+  <div class="container">
+    <h2 class="resultado" style="color: white;"></h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
