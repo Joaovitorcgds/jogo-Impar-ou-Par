@@ -5,30 +5,20 @@
 body {
   font-family: "Roboto Mono", monospace;
   min-height: 400px;
-  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/tabela-classificacao-bg.png");
+  background-image: url("https://abglt.org.br/wp-content/uploads/2020/10/wallpaper-pc1-scaled-1.jpg");
   background-color: #111;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.container {
-  text-align: center;
-  padding: 20px;
-  height: 100vh;
-}
-
-.page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
-}
-
-label{
   color: white;
 }
 
+.page-title {
+  margin: 0 0 5px;
+}
+
+
 .page-subtitle {
-  color: #ffffff;
   margin-top: 5px;
 }
 
@@ -43,8 +33,59 @@ label{
   right: 10px;
 }
 
+form{
+  width: 300px;
+  margin: auto;
+}
+
+label{
+  position: relative;
+  right: 60px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.numeroDigitado{
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.numeroDigitado:focus{
+  border-color: transparent;
+}
+
+#imparOuPar{
+  padding: 5px;
+}
+
+input[type="button"]{
+  margin-top: 5px;
+  padding: 5px 15px;
+  border-radius: 3px;
+  border-color: transparent;
+}
+
+.btnJogar{
+  position: relative;
+  right: 61px;
+}
+
+.btnZerar{
+  position: relative;
+  right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
 table {
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-collapse: collapse;
 }
 
@@ -52,9 +93,14 @@ h1 {
   color: white;
 }
 
-th,
-tr,
-td {
-  border: solid 1px white;
+th, tr, td {
+  /* border: solid 1px white; */
+  border-bottom: 1px solid #ddd;
   color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 500px;
 }

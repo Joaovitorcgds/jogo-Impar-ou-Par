@@ -6,17 +6,20 @@
 </head>
 
 <body>
-  <h1>Tabela de classificação</h1>
-  <h2 style="color: white;">Jogo Impar ou Par</h2>
+  <h1>Jogo Impar ou Par</h1>
+  <h2 style="color: white;">Tabela de classificação</h2>
+  
   <form style= "margin-bottom: 20px">
-    <label for="numeroDigitado">Insira um número</label>
+    <label for="numeroDigitado">Insira um número</label><br>
     <input type="number" min= 0 name="numeroDigitado" class="numeroDigitado" placeholder="coloque um número">
+    
     <select id="imparOuPar">
       <option value="impar">Impar</option>
       <option value="par">Par</option>
-    </select>
-    <input type="button" value="jogar" onclick="jogar()">
-    <input type="button" value="zerar" onclick="zerarJogo()">
+    </select> </br>
+
+    <input type="button" value="jogar" class="btnJogar" onclick="jogar()">
+    <input type="button" value="zerar" class="btnZerar" onclick="zerarJogo()">
   </form>
 
   <table style="width:100%">
@@ -28,9 +31,11 @@
         <th>Pontos</th>
       </tr>
     </thead>
+    
     <tbody id="tabelaJogadores">
     </tbody>
   </table>
+
   <div class="container">
     <h2 class="resultado" style="color: white;"></h2>
   </div>
